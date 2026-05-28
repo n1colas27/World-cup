@@ -27,6 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Mobile hamburger button
+    const mobileToggle = document.querySelector('.hamburger');
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            toggleMobileMenu();
+        });
+    }
+
     // Close mobile menu on outside click
     document.addEventListener('click', function (e) {
         const navbar = document.querySelector('.navbar');
@@ -34,6 +43,16 @@ document.addEventListener('DOMContentLoaded', function () {
             const menu = document.querySelector('.navbar-menu');
             if (menu) menu.classList.remove('active');
         }
+    });
+
+    // Close mobile menu when a navigation item is selected
+    document.querySelectorAll('.navbar-menu .nav-link').forEach(btn => {
+        btn.addEventListener('click', function () {
+            if (window.innerWidth <= 768) {
+                const menu = document.querySelector('.navbar-menu');
+                if (menu) menu.classList.remove('active');
+            }
+        });
     });
 
     // Animate elements on scroll

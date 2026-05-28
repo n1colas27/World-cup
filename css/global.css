@@ -414,12 +414,17 @@ a { text-decoration: none; color: inherit; }
         top: var(--navbar-h); left:0; right:0; bottom:0;
         background: var(--bg-card); flex-direction: column;
         align-items: stretch; padding: var(--spacing-lg);
-        gap: var(--spacing-sm); overflow-y: auto; z-index: 999;
+        gap: var(--spacing-sm); overflow-y: auto; z-index: 1001;
     }
-    .navbar-menu.active { display: flex; }
+    .navbar-menu.active {
+        display: flex !important;
+        padding-top: var(--spacing-lg);
+    }
+    .navbar-menu.active li { width: 100%; }
     .nav-link {
         font-size: var(--font-size-md); padding: var(--spacing-md);
         border-bottom: 1px solid var(--border-light); border-radius: 0;
+        width: 100%; text-align: left;
     }
     .dropdown-menu {
         position: static; visibility: visible; opacity: 1;
