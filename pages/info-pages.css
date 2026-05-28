@@ -505,6 +505,9 @@ body .culture-feature {
 }
 
 @media (max-width: 900px) {
+    .section-heading-row { flex-direction: column; align-items: stretch; }
+    .section-note { max-width: 100%; }
+
     .info-grid,
     .host-grid,
     .feature-band,
@@ -516,6 +519,15 @@ body .culture-feature {
     .feature-band {
         display: block;
     }
+
+    .dropdown-menu {
+        width: calc(100vw - 2rem);
+        max-width: none;
+    }
+
+    .home-subtitle { max-width: 100%; }
+    .countdown-panel { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hero-actions { justify-content: center; }
 
     .feature-list {
         margin-top: var(--spacing-lg);
@@ -532,18 +544,37 @@ body .culture-feature {
 @media (max-width: 640px) {
     .home-hero {
         min-height: 500px;
+        padding: var(--spacing-2xl) var(--spacing-md);
     }
+
+    .home-title { font-size: clamp(2.5rem, 14vw, 4rem); }
+    .home-subtitle { font-size: 1rem; }
 
     .info-grid,
     .host-grid,
     .feature-list,
     .sim-grid,
-    .standings-grid {
+    .standings-grid,
+    .timeline-grid,
+    .groups-grid,
+    .knowledge-grid,
+    .rules-grid,
+    .sim-help-grid,
+    .culture-strip {
         grid-template-columns: 1fr;
     }
 
+    .countdown-panel { grid-template-columns: 1fr; }
+    .countdown-item { width: 100%; }
+    .hero-actions { flex-direction: column; }
+    .hero-actions button { width: 100%; }
+
     .score-row {
-        grid-template-columns: 1fr 58px 58px 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .match-card input {
+        width: 100%;
     }
 }
 
