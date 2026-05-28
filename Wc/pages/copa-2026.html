@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa 2026 - Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="info-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo"><p class="logo-text">⚽ Copa 2026</p></div>
+            <ul class="navbar-menu">
+                <li><button class="nav-link" onclick="navigateTo('../index.html')">Home</button></li>
+                <li><button class="nav-link" onclick="navigateTo('historia.html')">História</button></li>
+                <li><button class="nav-link active" onclick="navigateTo('copa-2026.html')">Copa 2026</button></li>
+                <li><button class="nav-link" onclick="navigateTo('recordes.html')">Recordes</button></li>
+                <li><button class="nav-link" onclick="navigateTo('simulador.html')">Simulador</button></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">selecoes ▾</button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header"><p class="dropdown-header-title">⚽ Selecione uma seleção</p></div>
+                        <div class="dropdown-groups">
+                            <div class="group-column host-column"><p class="group-title">países-sede</p><button class="group-team" onclick="navigateTo('selecoes/mexico.html')">México</button><button class="group-team" onclick="navigateTo('selecoes/canada.html')">Canadá</button><button class="group-team" onclick="navigateTo('selecoes/eua.html')">Estados Unidos</button></div>
+                            <div class="group-column"><p class="group-title">Grupo C</p><button class="group-team" onclick="navigateTo('selecoes/brasil.html')">Brasil</button><button class="group-team" onclick="navigateTo('selecoes/marrocos.html')">Marrocos</button><button class="group-team" onclick="navigateTo('selecoes/haiti.html')">Haiti</button><button class="group-team" onclick="navigateTo('selecoes/escocia.html')">Escócia</button></div>
+                            <div class="group-column"><p class="group-title">Grupo J</p><button class="group-team" onclick="navigateTo('selecoes/argentina.html')">Argentina</button><button class="group-team" onclick="navigateTo('selecoes/argelia.html')">Argélia</button><button class="group-team" onclick="navigateTo('selecoes/austria.html')">Áustria</button><button class="group-team" onclick="navigateTo('selecoes/jordania.html')">Jordânia</button></div>
+                            <div class="group-column"><p class="group-title">Grupo I</p><button class="group-team" onclick="navigateTo('selecoes/franca.html')">França</button><button class="group-team" onclick="navigateTo('selecoes/senegal.html')">Senegal</button><button class="group-team" onclick="navigateTo('selecoes/iraque.html')">Iraque</button><button class="group-team" onclick="navigateTo('selecoes/noruega.html')">noruega</button></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="info-hero">
+            <div class="info-hero-content">
+                <p class="info-hero-title">Copa 2026</p>
+                <p class="info-hero-subtitle">A maior edição da História será disputada não Canadá, México e Estados Unidos, com 48 selecoes e 104 partidas.</p>
+            </div>
+        </section>
+
+        <section class="quick-info">
+            <p class="section-title">Dados Principais</p>
+            <div class="info-grid">
+                <div class="info-card animate-up"><p class="info-number">11/06</p><p class="info-label">Abertura</p><p class="info-text">Início previsto para 11 de junho de 2026.</p></div>
+                <div class="info-card animate-up"><p class="info-number">19/07</p><p class="info-label">Final</p><p class="info-text">Decisão marcada para 19 de julho de 2026.</p></div>
+                <div class="info-card animate-up"><p class="info-number">3</p><p class="info-label">países</p><p class="info-text">Canadá, México e Estados Unidos.</p></div>
+                <div class="info-card animate-up"><p class="info-number">16</p><p class="info-label">Sedes</p><p class="info-text">Cidades espalhadas pela América do norte.</p></div>
+            </div>
+        </section>
+
+        <section class="host-section">
+            <p class="section-title">países-Sede</p>
+            <div class="host-grid">
+                <div class="host-card"><p class="host-flag">🇨🇦</p><p class="host-title">Canadá</p><p class="host-text">Recebe jogos em Toronão e Vanãouver, amplia a presença do país não cenário do futebol mundial.</p></div>
+                <div class="host-card"><p class="host-flag">🇲🇽</p><p class="host-title">México</p><p class="host-text">Sediará partidas em Guadalajara, Cidade do México e Monterrey. O Estádio Azteca volta a ser palco mundial.</p></div>
+                <div class="host-card"><p class="host-flag">🇺🇸</p><p class="host-title">Estados Unidos</p><p class="host-text">Terá o maior número de cidades-sede e receberá a final não MetLife Stadium, em Nova Jersey.</p></div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <p class="section-title">Formato do Torneio</p>
+            <div class="text-panel">
+                <p class="body-text">A edição de 2026 Terá 48 selecoes divididas em 12 grupos de quatro equipes. As duas melhores de cada grupo Avançam diretamente, junho com as oito melhores Teráeiras colocadas.</p>
+                <p class="body-text">Depois da fase de grupos, a competição entra não mata-mata, começa pela fase de 32 selecoes até chegar º grande final.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <p class="section-title">Regras de Classificação</p>
+            <div class="rules-grid">
+                <div class="rule-card animate-up" data-tilt><p class="rule-title">Fase de grupos</p><p class="rule-text">Vitória vale 3 ponãos, empate vale 1 e derrota não soma. Cada seleção joga três partidas.</p></div>
+                <div class="rule-card animate-up" data-tilt><p class="rule-title">Quem avança</p><p class="rule-text">Classificam-se os dois primeiros de cada grupo e as oito melhores Teráeiras colocadas.</p></div>
+                <div class="rule-card animate-up" data-tilt><p class="rule-title">Mata-mata</p><p class="rule-text">A fase eliminatéria começa com 32 equipes. Quem perde está fora, até sobrar apenas a campeão.</p></div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <p class="section-title">Grupos Trabalhados não Site</p>
+            <div class="groups-grid">
+                <div class="group-card"><p class="group-title-large">Grupo C</p><div class="group-team-list"><p>Brasil</p><p>Marrocos</p><p>Haiti</p><p>Escócia</p></div></div>
+                <div class="group-card"><p class="group-title-large">Grupo I</p><div class="group-team-list"><p>França</p><p>Senegal</p><p>noruega</p><p>Iraque</p></div></div>
+                <div class="group-card"><p class="group-title-large">Grupo J</p><div class="group-team-list"><p>Argentina</p><p>Argélia</p><p>Áustria</p><p>Jordânia</p></div></div>
+                <div class="group-card"><p class="group-title-large">Sedes</p><div class="group-team-list"><p>México</p><p>Canadá</p><p>Estados Unidos</p></div></div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <p class="section-title">Cidades-Sede</p>
+            <div class="city-grid">
+                <div class="city-card"><p class="city-name">Toronão</p><p class="city-text">Canadá</p></div>
+                <div class="city-card"><p class="city-name">Vanãouver</p><p class="city-text">Canadá</p></div>
+                <div class="city-card"><p class="city-name">Guadalajara</p><p class="city-text">México</p></div>
+                <div class="city-card"><p class="city-name">Cidade do México</p><p class="city-text">México</p></div>
+                <div class="city-card"><p class="city-name">Monterrey</p><p class="city-text">México</p></div>
+                <div class="city-card"><p class="city-name">Atlanta</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Boston</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Dallas</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Houston</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Kansas City</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Los Angeles</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Miami</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Nova York/Nova Jersey</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Filadélfia</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">San Francisco Bay Area</p><p class="city-text">Estados Unidos</p></div>
+                <div class="city-card"><p class="city-name">Seattle</p><p class="city-text">Estados Unidos</p></div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <p class="section-title">Experiência do Torcedor</p>
+            <div class="culture-strip">
+                <div class="culture-feature">
+                    <p class="section-title">Uma Copa Continental</p>
+                    <p class="body-text">A edição de 2026 espalha o torneio por diferentes fusos, climas e culturas. Isso muda a logística das selecoes, o deslocamenão das torcidas e a forma como o evento será acompanhado ao redor do mundo.</p>
+                </div>
+                <div class="culture-stack">
+                    <div class="culture-card" data-tilt><p class="culture-title">Escala</p><p class="culture-text">Serão 104 partidas, número bem maior que nas edições recentes com 32 selecoes.</p></div>
+                    <div class="culture-card" data-tilt><p class="culture-title">sedes históricas</p><p class="culture-text">O México volta a receber jogos de Copa, incluir o Estádio da abertura.</p></div>
+                    <div class="culture-card" data-tilt><p class="culture-title">novos públicos</p><p class="culture-text">Canadá e Estados Unidos reforçam o crescimento do futebol na América do norte.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="source-card">
+                <p class="source-title">Fontes usadas</p>
+                <p class="source-text">Informações gerais organizadas com base nas páginas oficiais da FIFA sobre calendário, formato, sedes e dados da Copa do Mundo 2026.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><p class="footer-title">Copa do Mundo 2026</p><p class="footer-text">Site informativo desenvolvido como trabalho acadêmico.</p></div>
+            <div class="footer-section"><p class="footer-subtitle">Navegação</p><ul class="footer-links"><li><button class="footer-link" onclick="navigateTo('../index.html')">Home</button></li><li><button class="footer-link" onclick="navigateTo('historia.html')">História</button></li><li><button class="footer-link" onclick="navigateTo('recordes.html')">Recordes</button></li></ul></div>
+            <div class="footer-section"><p class="footer-subtitle">Informações</p><p class="footer-text">Dados preparados para a Copa do Mundo FIFA 2026.</p></div>
+        </div>
+        <div class="footer-bottom"><p class="footer-copyright">© 2026 Copa do Mundo. Todos os direitos reservados.</p></div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

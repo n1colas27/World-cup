@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordes - Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="recordes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo"><p class="logo-text">⚽ Copa 2026</p></div>
+            <ul class="navbar-menu">
+                <li><button class="nav-link" onclick="navigateTo('../index.html')">Home</button></li>
+                <li><button class="nav-link" onclick="navigateTo('historia.html')">História</button></li>
+                <li><button class="nav-link" onclick="navigateTo('copa-2026.html')">Copa 2026</button></li>
+                <li><button class="nav-link active" onclick="navigateTo('recordes.html')">Recordes</button></li>
+                <li><button class="nav-link" onclick="navigateTo('simulador.html')">Simulador</button></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Seleções ▼</button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">
+                            <p class="dropdown-header-title">⚽ Selecione uma seleção</p>
+                        </div>
+                        <div class="dropdown-groups">
+                            <div class="group-column host-column">
+                                <p class="group-title">Países-sede</p>
+                                <button class="group-team" onclick="navigateTo('selecoes/mexico.html')">México</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/canada.html')">Canadá</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/eua.html')">Estados Unidos</button>
+                            </div>
+                            <div class="group-column">
+                                <p class="group-title">Grupo C</p>
+                                <button class="group-team" onclick="navigateTo('selecoes/brasil.html')">Brasil</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/marrocos.html')">Marrocos</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/haiti.html')">Haiti</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/escocia.html')">Escócia</button>
+                            </div>
+                            <div class="group-column">
+                                <p class="group-title">Grupo J</p>
+                                <button class="group-team" onclick="navigateTo('selecoes/argentina.html')">Argentina</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/argelia.html')">Argélia</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/austria.html')">Áustria</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/jordania.html')">Jordânia</button>
+                            </div>
+                            <div class="group-column">
+                                <p class="group-title">Grupo I</p>
+                                <button class="group-team" onclick="navigateTo('selecoes/franca.html')">França</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/senegal.html')">Senegal</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/iraque.html')">Iraque</button>
+                                <button class="group-team" onclick="navigateTo('selecoes/noruega.html')">Noruega</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <p class="page-hero-title">Recordes Históricos</p>
+                <p class="page-hero-subtitle">Os maiores feitos na história da Copa do Mundo</p>
+            </div>
+        </section>
+
+        <!-- MAIORES CAMPEÕES -->
+        <section class="champions-ranking">
+            <p class="section-title">Maiores Campeões</p>
+            <div class="ranking-list">
+                <div class="ranking-item animate-up">
+                    <p class="ranking-position">1º</p>
+                    <p class="ranking-flag">🇧🇷</p>
+                    <div class="ranking-info">
+                        <p class="ranking-name">Brasil</p>
+                        <p class="ranking-detail">5 Títulos · 1958, 1962, 1970, 1994, 2002</p>
+                    </div>
+                    <div class="ranking-bar-wrap">
+                        <div class="ranking-bar"><div class="ranking-fill" style="width:100%"></div></div>
+                    </div>
+                </div>
+                <div class="ranking-item animate-up">
+                    <p class="ranking-position">2º</p>
+                    <p class="ranking-flag">🇩🇪</p>
+                    <div class="ranking-info">
+                        <p class="ranking-name">Alemanha</p>
+                        <p class="ranking-detail">4 Títulos · 1954, 1974, 1990, 2014</p>
+                    </div>
+                    <div class="ranking-bar-wrap">
+                        <div class="ranking-bar"><div class="ranking-fill" style="width:80%"></div></div>
+                    </div>
+                </div>
+                <div class="ranking-item animate-up">
+                    <p class="ranking-position">2º</p>
+                    <p class="ranking-flag">🇮🇹</p>
+                    <div class="ranking-info">
+                        <p class="ranking-name">Itália</p>
+                        <p class="ranking-detail">4 Títulos · 1934, 1938, 1982, 2006</p>
+                    </div>
+                    <div class="ranking-bar-wrap">
+                        <div class="ranking-bar"><div class="ranking-fill" style="width:80%"></div></div>
+                    </div>
+                </div>
+                <div class="ranking-item animate-up">
+                    <p class="ranking-position">4º</p>
+                    <p class="ranking-flag">🇦🇷</p>
+                    <div class="ranking-info">
+                        <p class="ranking-name">Argentina</p>
+                        <p class="ranking-detail">3 Títulos · 1978, 1986, 2022</p>
+                    </div>
+                    <div class="ranking-bar-wrap">
+                        <div class="ranking-bar"><div class="ranking-fill" style="width:60%"></div></div>
+                    </div>
+                </div>
+                <div class="ranking-item animate-up">
+                    <p class="ranking-position">5º</p>
+                    <p class="ranking-flag">🇫🇷</p>
+                    <div class="ranking-info">
+                        <p class="ranking-name">França</p>
+                        <p class="ranking-detail">2 Títulos · 1998, 2018</p>
+                    </div>
+                    <div class="ranking-bar-wrap">
+                        <div class="ranking-bar"><div class="ranking-fill" style="width:40%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIORES ARTILHEIROS -->
+        <section class="top-scorers">
+            <p class="section-title">Maiores Artilheiros</p>
+            <div class="scorers-grid">
+                <div class="scorer-card animate-up">
+                    <div class="scorer-photo">
+                        <div class="scorer-badge">1º</div>
+                        <img src="../img/klose.jpg" alt="Miroslav Klose">
+                    </div>
+                    <div class="scorer-info">
+                        <p class="scorer-name">Miroslav Klose</p>
+                        <p class="scorer-country">🇩🇪 Alemanha</p>
+                        <p class="scorer-goals">16 Gols</p>
+                        <p class="scorer-detail">2002 · 2006 · 2010 · 2014</p>
+                    </div>
+                </div>
+                <div class="scorer-card animate-up">
+                    <div class="scorer-photo">
+                        <div class="scorer-badge">2º</div>
+                        <img src="../img/ronaldo.webp" alt="Ronaldo Nazário">
+                    </div>
+                    <div class="scorer-info">
+                        <p class="scorer-name">Ronaldo Nazário</p>
+                        <p class="scorer-country">🇧🇷 Brasil</p>
+                        <p class="scorer-goals">15 Gols</p>
+                        <p class="scorer-detail">1994 · 1998 · 2002 · 2006</p>
+                    </div>
+                </div>
+                <div class="scorer-card animate-up">
+                    <div class="scorer-photo">
+                        <div class="scorer-badge">3º</div>
+                        <img src="../img/muller.jpg" alt="Gerd Müller">
+                    </div>
+                    <div class="scorer-info">
+                        <p class="scorer-name">Gerd Müller</p>
+                        <p class="scorer-country">🇩🇪 Alemanha</p>
+                        <p class="scorer-goals">14 Gols</p>
+                        <p class="scorer-detail">1970 · 1974</p>
+                    </div>
+                </div>
+                <div class="scorer-card animate-up">
+                    <div class="scorer-photo">
+                        <div class="scorer-badge">4º</div>
+                        <img src="../img/messi.jpg" alt="Lionel Messi">
+                    </div>
+                    <div class="scorer-info">
+                        <p class="scorer-name">Lionel Messi</p>
+                        <p class="scorer-country">🇦🇷 Argentina</p>
+                        <p class="scorer-goals">13 Gols</p>
+                        <p class="scorer-detail">2006 · 2010 · 2014 · 2018 · 2022</p>
+                    </div>
+                </div>
+                <div class="scorer-card animate-up">
+                    <div class="scorer-photo">
+                        <div class="scorer-badge">5º</div>
+                        <img src="../img/fountaine.avif" alt="Just Fontaine">
+                    </div>
+                    <div class="scorer-info">
+                        <p class="scorer-name">Just Fontaine</p>
+                        <p class="scorer-country">🇫🇷 França</p>
+                        <p class="scorer-goals">13 Gols</p>
+                        <p class="scorer-detail">1958 · recorde em uma edição</p>
+                    </div>
+                </div>
+                <div class="scorer-card animate-up">
+                    <div class="scorer-photo">
+                        <div class="scorer-badge">6º</div>
+                        <img src="../img/pele.jpg" alt="Pelé">
+                    </div>
+                    <div class="scorer-info">
+                        <p class="scorer-name">Pelé</p>
+                        <p class="scorer-country">🇧🇷 Brasil</p>
+                        <p class="scorer-goals">12 Gols</p>
+                        <p class="scorer-detail">1958 · 1962 · 1966 · 1970</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECORDES HISTÓRICOS -->
+        <section class="historic-records">
+            <p class="section-title">Recordes Históricos</p>
+            <div class="records-grid">
+                <div class="record-card animate-up">
+                    <p class="record-title">Maior Goleada</p>
+                    <p class="record-value">Alemanha 7 × 1 Brasil</p>
+                    <p class="record-detail">Semifinal 2014 · Belo Horizonte, Brasil</p>
+                </div>
+                <div class="record-card animate-up">
+                    <p class="record-title">Maior Público</p>
+                    <p class="record-value">173.850 Espectadores</p>
+                    <p class="record-detail">Brasil 3 × 1 Uruguai · Maracanã 1950</p>
+                </div>
+                <div class="record-card animate-up">
+                    <p class="record-title">Mais Gols em um Jogo</p>
+                    <p class="record-value">12 Gols no Total</p>
+                    <p class="record-detail">Áustria 7 × 5 Suíça · 1954</p>
+                </div>
+                <div class="record-card animate-up">
+                    <p class="record-title">Mais Gols em uma Copa (seleção)</p>
+                    <p class="record-value">Hungria — 27 Gols</p>
+                    <p class="record-detail">Copa de 1954 na Suíça</p>
+                </div>
+                <div class="record-card animate-up">
+                    <p class="record-title">Melhor Defesa</p>
+                    <p class="record-value">Itália — 1 Gol Sofrido</p>
+                    <p class="record-detail">Copa de 1990 na Itália</p>
+                </div>
+                <div class="record-card animate-up">
+                    <p class="record-title">Mais Copas Disputadas (jogador)</p>
+                    <p class="record-value">5 Copas</p>
+                    <p class="record-detail">Ronaldo, Messi, CR7 e outros</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="historic-records record-context">
+            <p class="section-title">Por que esses recordes importam</p>
+            <div class="records-grid">
+                <div class="record-card animate-up">
+                    <p class="record-title">Regularidade</p>
+                    <p class="record-value">Brasil em todas as Copas</p>
+                    <p class="record-detail">A Seleção Brasileira é a única a participar de todas as edições do torneio masculino.</p>
+                </div>
+                <div class="record-card animate-up">
+                    <p class="record-title">Eficiência individual</p>
+                    <p class="record-value">Fontaine: 13 em 1958</p>
+                    <p class="record-detail">É um dos recordes mais difíceis de alcançar, porque foi construído em apenas uma edição.</p>
+                </div>
+                <div class="record-card animate-up">
+                    <p class="record-title">Era moderna</p>
+                    <p class="record-value">2026 terá 104 jogos</p>
+                    <p class="record-detail">A ampliação cria mais oportunidades para novos recordes coletivos e individuais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTATÍSTICAS -->
+        <section class="statistics">
+            <p class="section-title">Estatísticas Gerais</p>
+            <div class="stats-grid">
+                <div class="stat-card animate-up">
+                    <p class="stat-number">22</p>
+                    <p class="stat-label">Edições Realizadas</p>
+                </div>
+                <div class="stat-card animate-up">
+                    <p class="stat-number">211</p>
+                    <p class="stat-label">Seleções Participantes (hist.)</p>
+                </div>
+                <div class="stat-card animate-up">
+                    <p class="stat-number">900+</p>
+                    <p class="stat-label">Jogos Realizados</p>
+                </div>
+                <div class="stat-card animate-up">
+                    <p class="stat-number">2.700+</p>
+                    <p class="stat-label">Gols Marcados</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p class="footer-title">Copa do Mundo 2026</p>
+                <p class="footer-text">Site informativo e interativo sobre a maior edição da história do futebol.</p>
+            </div>
+            <div class="footer-section">
+                <p class="footer-subtitle">Navegação</p>
+                <ul class="footer-links">
+                    <li><button class="footer-link" onclick="navigateTo('../index.html')">Home</button></li>
+                    <li><button class="footer-link" onclick="navigateTo('historia.html')">História</button></li>
+                    <li><button class="footer-link" onclick="navigateTo('copa-2026.html')">Copa 2026</button></li>
+                    <li><button class="footer-link" onclick="navigateTo('recordes.html')">Recordes</button></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p class="footer-subtitle">Informações</p>
+                <p class="footer-text">Dados baseados em informações oficiais da FIFA.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 Copa do Mundo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
